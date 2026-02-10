@@ -1,0 +1,31 @@
+#!/bin/bash
+#PBS -N cuda_build
+#PBS -l select=1:ncpus=16:mem=16gb
+#PBS -l walltime=00:01:00
+#PBS -j oe
+#PBS -o build.out
+#PBS -q normal
+#PBS -P $ProjectName$
+
+cd $WorkingDir$
+
+module purge
+module load PrgEnv-gnu/8.3.3
+module load cmake/4.1.0
+module load cuda/12.2.2
+module swap gcc/11.2.0 gcc/12.3.0-nscc
+
+echo "Using:"
+which cmake
+which nvcc
+cmake --version
+nvcc --version
+
+echo "=== Configuring ==="
+cmake -B build -S . -DCMAKE_BUILD_TYPE=Release
+
+echo "=== Building ==="
+cmake --build build --verbose -j 16
+
+echo "=== Build finished ==="
+ls -lh build/
