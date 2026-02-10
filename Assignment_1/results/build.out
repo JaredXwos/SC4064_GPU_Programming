@@ -1,0 +1,243 @@
+Loading CMake 4.1.0
+  CMake executables: /app/apps/cmake/4.1.0/bin
+  Documentation: /app/apps/cmake/4.1.0/doc
+  Use 'cmake --help' for usage information
+Using:
+/app/apps/cmake/4.1.0/bin/cmake
+/app/apps/cuda/12.2.2/bin/nvcc
+cmake version 4.1.0
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2023 NVIDIA Corporation
+Built on Tue_Aug_15_22:02:13_PDT_2023
+Cuda compilation tools, release 12.2, V12.2.140
+Build cuda_12.2.r12.2/compiler.33191640_0
+=== Configuring ===
+-- Configuring done (0.5s)
+-- Generating done (15.7s)
+-- Build files have been written to: $WorkingDir$/build
+=== Building ===
+Change Dir: '$WorkingDir$/build'
+
+Run Build Command(s): /app/apps/cmake/4.1.0/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile -j16
+/app/apps/cmake/4.1.0/bin/cmake -S$WorkingDir$ -B$WorkingDir$/build --check-build-system CMakeFiles/Makefile.cmake 0
+/app/apps/cmake/4.1.0/bin/cmake -E cmake_progress_start $WorkingDir$/build/CMakeFiles $WorkingDir$/build//CMakeFiles/progress.marks
+/bin/gmake  -f CMakeFiles/Makefile2 all
+gmake[1]: Entering directory '$WorkingDir$/build'
+/bin/gmake  -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/depend
+gmake[2]: Entering directory '$WorkingDir$/build'
+cd $WorkingDir$/build && /app/apps/cmake/4.1.0/bin/cmake -E cmake_depends "Unix Makefiles" $WorkingDir$ $WorkingDir$ $WorkingDir$/build $WorkingDir$/build $WorkingDir$/build/CMakeFiles/utils.dir/DependInfo.cmake "--color="
+Dependencies file "CMakeFiles/utils.dir/src/utils.cu.o.d" is newer than depends file "$WorkingDir$/build/CMakeFiles/utils.dir/compiler_depend.internal".
+Consolidate compiler generated dependencies of target utils
+gmake[2]: Leaving directory '$WorkingDir$/build'
+/bin/gmake  -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/build
+gmake[2]: Entering directory '$WorkingDir$/build'
+[  9%] Building CUDA object CMakeFiles/utils.dir/src/utils.cu.o
+/app/apps/cuda/12.2.2/bin/nvcc -forward-unknown-to-host-compiler   -O3 -DNDEBUG -std=c++20 "--generate-code=arch=compute_80,code=[compute_80,sm_80]" -lineinfo -Xptxas=-v,-warn-spills -MD -MT CMakeFiles/utils.dir/src/utils.cu.o -MF CMakeFiles/utils.dir/src/utils.cu.o.d -x cu -rdc=true -c $WorkingDir$/src/utils.cu -o CMakeFiles/utils.dir/src/utils.cu.o
+ptxas info    : 16 bytes gmem
+ptxas info    : Compiling entry function '_Z4fillPfif' for 'sm_80'
+ptxas info    : Function properties for _Z4fillPfif
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 8 registers, 368 bytes cmem[0]
+[ 18%] Linking CUDA static library libutils.a
+/app/apps/cmake/4.1.0/bin/cmake -P CMakeFiles/utils.dir/cmake_clean_target.cmake
+/app/apps/cmake/4.1.0/bin/cmake -E cmake_link_script CMakeFiles/utils.dir/link.txt --verbose=1
+/bin/ar qc libutils.a CMakeFiles/utils.dir/src/utils.cu.o
+/bin/ranlib libutils.a
+gmake[2]: Leaving directory '$WorkingDir$/build'
+[ 18%] Built target utils
+/bin/gmake  -f CMakeFiles/SC4064Tut1Q1.dir/build.make CMakeFiles/SC4064Tut1Q1.dir/depend
+/bin/gmake  -f CMakeFiles/SC4064Tut1Q2.dir/build.make CMakeFiles/SC4064Tut1Q2.dir/depend
+/bin/gmake  -f CMakeFiles/SC4064Tut1Q3.dir/build.make CMakeFiles/SC4064Tut1Q3.dir/depend
+gmake[2]: Entering directory '$WorkingDir$/build'
+cd $WorkingDir$/build && /app/apps/cmake/4.1.0/bin/cmake -E cmake_depends "Unix Makefiles" $WorkingDir$ $WorkingDir$ $WorkingDir$/build $WorkingDir$/build $WorkingDir$/build/CMakeFiles/SC4064Tut1Q1.dir/DependInfo.cmake "--color="
+gmake[2]: Entering directory '$WorkingDir$/build'
+cd $WorkingDir$/build && /app/apps/cmake/4.1.0/bin/cmake -E cmake_depends "Unix Makefiles" $WorkingDir$ $WorkingDir$ $WorkingDir$/build $WorkingDir$/build $WorkingDir$/build/CMakeFiles/SC4064Tut1Q2.dir/DependInfo.cmake "--color="
+gmake[2]: Entering directory '$WorkingDir$/build'
+cd $WorkingDir$/build && /app/apps/cmake/4.1.0/bin/cmake -E cmake_depends "Unix Makefiles" $WorkingDir$ $WorkingDir$ $WorkingDir$/build $WorkingDir$/build $WorkingDir$/build/CMakeFiles/SC4064Tut1Q3.dir/DependInfo.cmake "--color="
+Dependencies file "CMakeFiles/SC4064Tut1Q1.dir/src/vector_addition.cu.o.d" is newer than depends file "$WorkingDir$/build/CMakeFiles/SC4064Tut1Q1.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/SC4064Tut1Q2.dir/src/matrix_addition.cu.o.d" is newer than depends file "$WorkingDir$/build/CMakeFiles/SC4064Tut1Q2.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/SC4064Tut1Q3.dir/src/matrix_multiplication.cu.o.d" is newer than depends file "$WorkingDir$/build/CMakeFiles/SC4064Tut1Q3.dir/compiler_depend.internal".
+Consolidate compiler generated dependencies of target SC4064Tut1Q2
+Consolidate compiler generated dependencies of target SC4064Tut1Q1
+Consolidate compiler generated dependencies of target SC4064Tut1Q3
+gmake[2]: Leaving directory '$WorkingDir$/build'
+/bin/gmake  -f CMakeFiles/SC4064Tut1Q2.dir/build.make CMakeFiles/SC4064Tut1Q2.dir/build
+gmake[2]: Leaving directory '$WorkingDir$/build'
+/bin/gmake  -f CMakeFiles/SC4064Tut1Q1.dir/build.make CMakeFiles/SC4064Tut1Q1.dir/build
+gmake[2]: Leaving directory '$WorkingDir$/build'
+/bin/gmake  -f CMakeFiles/SC4064Tut1Q3.dir/build.make CMakeFiles/SC4064Tut1Q3.dir/build
+gmake[2]: Entering directory '$WorkingDir$/build'
+gmake[2]: Entering directory '$WorkingDir$/build'
+gmake[2]: Entering directory '$WorkingDir$/build'
+[ 36%] Building CUDA object CMakeFiles/SC4064Tut1Q2.dir/src/matrix_addition.cu.o
+/app/apps/cuda/12.2.2/bin/nvcc -forward-unknown-to-host-compiler   -O3 -DNDEBUG -std=c++20 "--generate-code=arch=compute_80,code=[compute_80,sm_80]" -lineinfo -Xptxas=-v,-warn-spills -MD -MT CMakeFiles/SC4064Tut1Q2.dir/src/matrix_addition.cu.o -MF CMakeFiles/SC4064Tut1Q2.dir/src/matrix_addition.cu.o.d -x cu -c $WorkingDir$/src/matrix_addition.cu -o CMakeFiles/SC4064Tut1Q2.dir/src/matrix_addition.cu.o
+[ 36%] Building CUDA object CMakeFiles/SC4064Tut1Q1.dir/src/vector_addition.cu.o
+/app/apps/cuda/12.2.2/bin/nvcc -forward-unknown-to-host-compiler   -O3 -DNDEBUG -std=c++20 "--generate-code=arch=compute_80,code=[compute_80,sm_80]" -lineinfo -Xptxas=-v,-warn-spills -MD -MT CMakeFiles/SC4064Tut1Q1.dir/src/vector_addition.cu.o -MF CMakeFiles/SC4064Tut1Q1.dir/src/vector_addition.cu.o.d -x cu -c $WorkingDir$/src/vector_addition.cu -o CMakeFiles/SC4064Tut1Q1.dir/src/vector_addition.cu.o
+[ 45%] Building CUDA object CMakeFiles/SC4064Tut1Q3.dir/src/matrix_multiplication.cu.o
+/app/apps/cuda/12.2.2/bin/nvcc -forward-unknown-to-host-compiler   -O3 -DNDEBUG -std=c++20 "--generate-code=arch=compute_80,code=[compute_80,sm_80]" -lineinfo -Xptxas=-v,-warn-spills -MD -MT CMakeFiles/SC4064Tut1Q3.dir/src/matrix_multiplication.cu.o -MF CMakeFiles/SC4064Tut1Q3.dir/src/matrix_multiplication.cu.o.d -x cu -c $WorkingDir$/src/matrix_multiplication.cu -o CMakeFiles/SC4064Tut1Q3.dir/src/matrix_multiplication.cu.o
+ptxas info    : 16 bytes gmem
+ptxas info    : Compiling entry function '_Z13matrix_add_2djjPKfS0_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z13matrix_add_2djjPKfS0_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 12 registers, 384 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z13matrix_add_1djjPKfS0_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z13matrix_add_1djjPKfS0_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 12 registers, 384 bytes cmem[0]
+ptxas info    : 16 bytes gmem
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj256ELj4EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj256ELj4EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj128ELj8EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj128ELj8EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj128ELj4EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj128ELj4EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj64ELj16EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj64ELj16EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj64ELj8EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj64ELj8EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj64ELj4EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj64ELj4EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj32ELj32EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj32ELj32EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj32ELj16EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj32ELj16EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj32ELj8EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj32ELj8EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj32ELj4EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj32ELj4EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj16ELj64EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj16ELj64EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj16ELj32EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj16ELj32EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj16ELj16EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj16ELj16EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj16ELj8EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj16ELj8EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj16ELj4EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj16ELj4EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj8ELj128EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj8ELj128EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj8ELj64EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj8ELj64EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj8ELj32EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj8ELj32EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj8ELj16EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj8ELj16EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj8ELj8EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj8ELj8EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj8ELj4EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj8ELj4EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj4ELj256EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj4ELj256EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj4ELj128EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj4ELj128EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj4ELj64EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj4ELj64EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj4ELj32EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj4ELj32EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj4ELj16EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj4ELj16EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj4ELj8EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj4ELj8EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15matrix_multiplyILj4ELj4EEvjjjPKfS1_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z15matrix_multiplyILj4ELj4EEvjjjPKfS1_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 392 bytes cmem[0]
+[ 54%] Linking CUDA device code CMakeFiles/SC4064Tut1Q2.dir/cmake_device_link.o
+/app/apps/cmake/4.1.0/bin/cmake -E cmake_link_script CMakeFiles/SC4064Tut1Q2.dir/dlink.txt --verbose=1
+ptxas info    : 16 bytes gmem
+ptxas info    : Compiling entry function '_Z12add_outplaceiPKfS0_Pf' for 'sm_80'
+ptxas info    : Function properties for _Z12add_outplaceiPKfS0_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 12 registers, 384 bytes cmem[0]
+/app/apps/cuda/12.2.2/bin/nvcc -forward-unknown-to-host-compiler -O3 -DNDEBUG "--generate-code=arch=compute_80,code=[compute_80,sm_80]" -Xcompiler=-fPIC -Wno-deprecated-gpu-targets -shared -dlink --options-file CMakeFiles/SC4064Tut1Q2.dir/deviceObjects1.rsp -o CMakeFiles/SC4064Tut1Q2.dir/cmake_device_link.o --options-file CMakeFiles/SC4064Tut1Q2.dir/deviceLinkLibs.rsp
+[ 63%] Linking CUDA executable SC4064Tut1Q2
+/app/apps/cmake/4.1.0/bin/cmake -E cmake_link_script CMakeFiles/SC4064Tut1Q2.dir/link.txt --verbose=1
+/app/apps/gcc/12.3.0-nscc/bin/g++ @CMakeFiles/SC4064Tut1Q2.dir/objects1.rsp CMakeFiles/SC4064Tut1Q2.dir/cmake_device_link.o -o SC4064Tut1Q2 @CMakeFiles/SC4064Tut1Q2.dir/linkLibs.rsp -L"/app/apps/cuda/12.2.2/targets/x86_64-linux/lib/stubs" -L"/app/apps/cuda/12.2.2/targets/x86_64-linux/lib"
+gmake[2]: Leaving directory '$WorkingDir$/build'
+[ 63%] Built target SC4064Tut1Q2
+[ 72%] Linking CUDA device code CMakeFiles/SC4064Tut1Q3.dir/cmake_device_link.o
+/app/apps/cmake/4.1.0/bin/cmake -E cmake_link_script CMakeFiles/SC4064Tut1Q3.dir/dlink.txt --verbose=1
+/app/apps/cuda/12.2.2/bin/nvcc -forward-unknown-to-host-compiler -O3 -DNDEBUG "--generate-code=arch=compute_80,code=[compute_80,sm_80]" -Xcompiler=-fPIC -Wno-deprecated-gpu-targets -shared -dlink --options-file CMakeFiles/SC4064Tut1Q3.dir/deviceObjects1.rsp -o CMakeFiles/SC4064Tut1Q3.dir/cmake_device_link.o --options-file CMakeFiles/SC4064Tut1Q3.dir/deviceLinkLibs.rsp
+[ 81%] Linking CUDA executable SC4064Tut1Q3
+/app/apps/cmake/4.1.0/bin/cmake -E cmake_link_script CMakeFiles/SC4064Tut1Q3.dir/link.txt --verbose=1
+/app/apps/gcc/12.3.0-nscc/bin/g++ @CMakeFiles/SC4064Tut1Q3.dir/objects1.rsp CMakeFiles/SC4064Tut1Q3.dir/cmake_device_link.o -o SC4064Tut1Q3 @CMakeFiles/SC4064Tut1Q3.dir/linkLibs.rsp -L"/app/apps/cuda/12.2.2/targets/x86_64-linux/lib/stubs" -L"/app/apps/cuda/12.2.2/targets/x86_64-linux/lib"
+gmake[2]: Leaving directory '$WorkingDir$/build'
+[ 81%] Built target SC4064Tut1Q3
+[ 90%] Linking CUDA device code CMakeFiles/SC4064Tut1Q1.dir/cmake_device_link.o
+/app/apps/cmake/4.1.0/bin/cmake -E cmake_link_script CMakeFiles/SC4064Tut1Q1.dir/dlink.txt --verbose=1
+/app/apps/cuda/12.2.2/bin/nvcc -forward-unknown-to-host-compiler -O3 -DNDEBUG "--generate-code=arch=compute_80,code=[compute_80,sm_80]" -Xcompiler=-fPIC -Wno-deprecated-gpu-targets -shared -dlink --options-file CMakeFiles/SC4064Tut1Q1.dir/deviceObjects1.rsp -o CMakeFiles/SC4064Tut1Q1.dir/cmake_device_link.o --options-file CMakeFiles/SC4064Tut1Q1.dir/deviceLinkLibs.rsp
+[100%] Linking CUDA executable SC4064Tut1Q1
+/app/apps/cmake/4.1.0/bin/cmake -E cmake_link_script CMakeFiles/SC4064Tut1Q1.dir/link.txt --verbose=1
+/app/apps/gcc/12.3.0-nscc/bin/g++ @CMakeFiles/SC4064Tut1Q1.dir/objects1.rsp CMakeFiles/SC4064Tut1Q1.dir/cmake_device_link.o -o SC4064Tut1Q1 @CMakeFiles/SC4064Tut1Q1.dir/linkLibs.rsp -L"/app/apps/cuda/12.2.2/targets/x86_64-linux/lib/stubs" -L"/app/apps/cuda/12.2.2/targets/x86_64-linux/lib"
+gmake[2]: Leaving directory '$WorkingDir$/build'
+[100%] Built target SC4064Tut1Q1
+gmake[1]: Leaving directory '$WorkingDir$/build'
+/app/apps/cmake/4.1.0/bin/cmake -E cmake_progress_start $WorkingDir$/build/CMakeFiles 0
+
+=== Build finished ===
+total 1.1M
+-rw-rw-r-- 1 $User$ $User$  13K Feb  6 12:52 CMakeCache.txt
+drwxrwxr-x 8 $User$ $User$ 4.0K Feb  9 08:31 CMakeFiles
+-rw-rw-r-- 1 $User$ $User$ 2.1K Feb  9 08:30 cmake_install.cmake
+-rw-rw-r-- 1 $User$ $User$  13K Feb  9 08:30 libutils.a
+-rw-rw-r-- 1 $User$ $User$  10K Feb  9 08:30 Makefile
+-rwxrwxr-x 1 $User$ $User$ 946K Feb  9 08:31 SC4064Tut1Q1
+-rwxrwxr-x 1 $User$ $User$ 950K Feb  9 08:31 SC4064Tut1Q2
+-rwxrwxr-x 1 $User$ $User$ 1.4M Feb  9 08:31 SC4064Tut1Q3
