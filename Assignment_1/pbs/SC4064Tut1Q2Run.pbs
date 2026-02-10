@@ -1,0 +1,16 @@
+#!/bin/bash
+#PBS -N q2
+#PBS -l select=1:ncpus=2:mem=4gb:ngpus=1
+#PBS -l walltime=00:01:00
+#PBS -j oe
+#PBS -o q2.out
+#PBS -q normal
+#PBS -P $ProjectName$
+
+cd $WorkingDir$
+
+module purge
+module load cuda/12.2.2
+
+echo Running Q2
+./build/SC4064Tut1Q2

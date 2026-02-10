@@ -1,0 +1,27 @@
+#!/bin/bash
+#PBS -N q1_serial
+#PBS -l select=1:ncpus=2:mem=4gb:ngpus=1
+#PBS -l walltime=00:01:00
+#PBS -j oe
+#PBS -o q1.out
+#PBS -q normal
+#PBS -P $ProjectName$
+
+cd $WorkingDir$
+
+module purge
+module load cuda/12.2.2
+
+sizes=(32 64 128 256)
+
+for N in "${sizes[@]}"; do
+    echo
+    echo "=============================="
+    echo "Running Q1 with N=$N"
+    echo "=============================="
+
+    ./build/SC4064Tut1Q1 $N
+done
+
+echo
+echo "Done."
