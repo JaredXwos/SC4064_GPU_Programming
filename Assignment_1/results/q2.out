@@ -1,0 +1,4 @@
+Running Q2
+1D: 0.62054 ms | 108.14521 GFLOPS
+2D: 0.64000 ms | 104.85760 GFLOPS
+Speedup (2D vs 1D): 0.970x | Percent improvement: -3.135 | Throughput ratio: 0.970x

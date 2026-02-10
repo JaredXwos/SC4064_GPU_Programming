@@ -1,0 +1,224 @@
+======================
+Running Q3 4 x 4
+======================
+no error
+Block   4x  4 (16 threads) | 820.832 ms | 1339.51 GFLOPS
+======================
+Running Q3 4 x 8
+======================
+no error
+Block   4x  8 (32 threads) | 470.663 ms | 2336.09 GFLOPS
+======================
+Running Q3 4 x 16
+======================
+no error
+Block   4x 16 (64 threads) | 414.936 ms | 2649.83 GFLOPS
+======================
+Running Q3 4 x 32
+======================
+no error
+Block   4x 32 (128 threads) | 375.466 ms | 2928.39 GFLOPS
+======================
+Running Q3 4 x 64
+======================
+no error
+Block   4x 64 (256 threads) | 354.327 ms | 3103.10 GFLOPS
+======================
+Running Q3 4 x 128
+======================
+no error
+Block   4x128 (512 threads) | 351.865 ms | 3124.81 GFLOPS
+======================
+Running Q3 4 x 256
+======================
+no error
+Block   4x256 (1024 threads) | 364.649 ms | 3015.26 GFLOPS
+======================
+Running Q3 8 x 4
+======================
+no error
+Block   8x  4 (32 threads) | 404.662 ms | 2717.11 GFLOPS
+======================
+Running Q3 8 x 8
+======================
+no error
+Block   8x  8 (64 threads) | 340.737 ms | 3226.86 GFLOPS
+======================
+Running Q3 8 x 16
+======================
+no error
+Block   8x 16 (128 threads) | 303.304 ms | 3625.12 GFLOPS
+======================
+Running Q3 8 x 32
+======================
+no error
+Block   8x 32 (256 threads) | 283.010 ms | 3885.06 GFLOPS
+======================
+Running Q3 8 x 64
+======================
+no error
+Block   8x 64 (512 threads) | 273.360 ms | 4022.21 GFLOPS
+======================
+Running Q3 8 x 128
+======================
+no error
+Block   8x128 (1024 threads) | 275.979 ms | 3984.04 GFLOPS
+======================
+Running Q3 8 x 256
+======================
+Block size is too big
+======================
+Running Q3 16 x 4
+======================
+no error
+Block  16x  4 (64 threads) | 362.753 ms | 3031.02 GFLOPS
+======================
+Running Q3 16 x 8
+======================
+no error
+Block  16x  8 (128 threads) | 265.814 ms | 4136.39 GFLOPS
+======================
+Running Q3 16 x 16
+======================
+no error
+Block  16x 16 (256 threads) | 223.813 ms | 4912.64 GFLOPS
+======================
+Running Q3 16 x 32
+======================
+no error
+Block  16x 32 (512 threads) | 206.262 ms | 5330.65 GFLOPS
+======================
+Running Q3 16 x 64
+======================
+no error
+Block  16x 64 (1024 threads) | 201.561 ms | 5454.98 GFLOPS
+======================
+Running Q3 16 x 128
+======================
+Block size is too big
+======================
+Running Q3 16 x 256
+======================
+Block size is too big
+======================
+Running Q3 32 x 4
+======================
+no error
+Block  32x  4 (128 threads) | 340.842 ms | 3225.86 GFLOPS
+======================
+Running Q3 32 x 8
+======================
+no error
+Block  32x  8 (256 threads) | 255.838 ms | 4297.68 GFLOPS
+======================
+Running Q3 32 x 16
+======================
+no error
+Block  32x 16 (512 threads) | 215.956 ms | 5091.36 GFLOPS
+======================
+Running Q3 32 x 32
+======================
+no error
+Block  32x 32 (1024 threads) | 199.014 ms | 5524.78 GFLOPS
+======================
+Running Q3 32 x 64
+======================
+Block size is too big
+======================
+Running Q3 32 x 128
+======================
+Block size is too big
+======================
+Running Q3 32 x 256
+======================
+Block size is too big
+======================
+Running Q3 64 x 4
+======================
+no error
+Block  64x  4 (256 threads) | 335.160 ms | 3280.55 GFLOPS
+======================
+Running Q3 64 x 8
+======================
+no error
+Block  64x  8 (512 threads) | 252.268 ms | 4358.51 GFLOPS
+======================
+Running Q3 64 x 16
+======================
+no error
+Block  64x 16 (1024 threads) | 213.578 ms | 5148.06 GFLOPS
+======================
+Running Q3 64 x 32
+======================
+Block size is too big
+======================
+Running Q3 64 x 64
+======================
+Block size is too big
+======================
+Running Q3 64 x 128
+======================
+Block size is too big
+======================
+Running Q3 64 x 256
+======================
+Block size is too big
+======================
+Running Q3 128 x 4
+======================
+no error
+Block 128x  4 (512 threads) | 332.128 ms | 3310.50 GFLOPS
+======================
+Running Q3 128 x 8
+======================
+no error
+Block 128x  8 (1024 threads) | 253.722 ms | 4333.54 GFLOPS
+======================
+Running Q3 128 x 16
+======================
+Block size is too big
+======================
+Running Q3 128 x 32
+======================
+Block size is too big
+======================
+Running Q3 128 x 64
+======================
+Block size is too big
+======================
+Running Q3 128 x 128
+======================
+Block size is too big
+======================
+Running Q3 128 x 256
+======================
+Block size is too big
+======================
+Running Q3 256 x 4
+======================
+no error
+Block 256x  4 (1024 threads) | 337.199 ms | 3260.72 GFLOPS
+======================
+Running Q3 256 x 8
+======================
+Block size is too big
+======================
+Running Q3 256 x 16
+======================
+Block size is too big
+======================
+Running Q3 256 x 32
+======================
+Block size is too big
+======================
+Running Q3 256 x 64
+======================
+Block size is too big
+======================
+Running Q3 256 x 128
+======================
+Block size is too big
+======================
+Running Q3 256 x 256
+======================
+Block size is too big
